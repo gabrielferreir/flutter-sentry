@@ -3,6 +3,7 @@ import 'package:flutter_sentry/env.dart';
 import 'package:sentry/sentry.dart';
 import 'dart:async';
 
+// Coloque a DNS do seu projeto do Sentry aqui
 final SentryClient _sentry = new SentryClient(dsn: DNS);
 
 Future<Null> _reportError(dynamic error, dynamic stackTrace) async {
